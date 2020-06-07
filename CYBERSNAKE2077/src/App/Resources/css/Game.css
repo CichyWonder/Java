@@ -1,0 +1,39 @@
+@font-face {
+    src: url("superstar_memesbruh03.ttf");
+}
+.label{
+    -fx-font-size: 20px;
+    -fx-text-fill: #fff300;
+    -fx-font-family: "Superstar";
+    -fx-arc-height: 80px;
+}
+#Scene{
+    -fx-background-image: url("blue.jpg");
+    -fx-text-alignment: center;
+}
+#Submit{
+    -fx-font-size: 20px;
+    -fx-background-color: transaprent;
+    -fx-text-fill: #fff300;
+    -fx-font-family: "Superstar";
+
+
+}
+#GameGrid{
+    -fx-border-color: #fff300;
+    -fx-border-width: 8px;
+}
+#Score{
+    -fx-font-size: 30px;
+}
+
+#Submit.button:hover {
+    -fx-text-fill: #de8f00;
+}
+#User {
+    -fx-font-size: 20px;
+    -fx-background-color: transaprent;
+    -fx-text-fill: #fff300;
+    -fx-border-color: #fff300;
+    -fx-font-family: "Superstar";
+}

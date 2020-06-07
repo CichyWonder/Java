@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="menu" prefHeight="600.0" prefWidth="800.0" stylesheets="@../Resources/css/Menu.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.MenuController">
+    <children>
+      <VBox layoutX="259.0" layoutY="117.0">
+          <Button layoutX="299.0" layoutY="114.0" mnemonicParsing="false" onAction="#start" prefHeight="44.0" prefWidth="282.0" text="Start" />
+         <Button layoutX="240.0" layoutY="300.0" mnemonicParsing="false" onAction="#readme" prefHeight="44.0" prefWidth="282.0" text="ReadMe" />
+         <Button mnemonicParsing="false" onAction="#sterowanie" prefHeight="71.0" prefWidth="282.0" text="Sterowanie" />
+         <Button mnemonicParsing="false" onAction="#highscores" prefHeight="71.0" prefWidth="285.0" text="HighScores" />
+      <Button mnemonicParsing="false" onAction="#exit" prefHeight="31.0" prefWidth="282.0" text="Wyjdź" />
+      </VBox>
+   <Label alignment="TOP_LEFT" layoutX="188.0" prefHeight="123.0" prefWidth="424.0" text="CYBERSNAKE2077" />
+    </children>
+</AnchorPane>

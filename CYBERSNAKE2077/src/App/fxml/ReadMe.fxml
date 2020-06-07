@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="readme" prefHeight="600.0" prefWidth="800.0" stylesheets="@../Resources/css/Menu.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.ReadMeController">
+   <children>
+      <Button layoutX="580.0" layoutY="475.0" mnemonicParsing="false" onAction="#back" prefHeight="48.0" prefWidth="143.0" text="Wróć" />
+      <Label fx:id="text" layoutX="130.0" layoutY="82.0" prefHeight="343.0" prefWidth="541.0" text="witam w mojej grze Cybersnake2077. Gra powstała na potrzeby projektu z zajęć poj. wiem, że jest dużo sphagetti kodu, ale no cóż to mój pierwszy projket." textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>
