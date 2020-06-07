@@ -1,0 +1,39 @@
+
+@font-face {
+    src: url("superstar_memesbruh03.ttf");
+}
+.text-field{
+    -fx-font-size: 20px;
+    -fx-background-color: transaprent;
+    -fx-text-fill: #fff300;
+    -fx-border-color: #fff300;
+}
+
+.button {
+    -fx-font-size: 40px;
+    -fx-background-color: transaprent;
+    -fx-text-fill: #fff300;
+}
+
+.button:hover {
+    -fx-text-fill: #de8f00;
+}
+.label{
+    -fx-font-size: 60px;
+    -fx-alignment: center;
+    -fx-text-fill: #fff300;
+    -fx-font-family: "Superstar";
+}
+#text{
+    -fx-font-size: 40px;
+    -fx-alignment: center;
+}
+#menu{
+    -fx-font-family: "Superstar";
+    -fx-background-image: url(city.gif);
+    -fx-background-size: 800px 600px;
+}
+#labelup{
+    fx-font-size: 20px;
+}
+
