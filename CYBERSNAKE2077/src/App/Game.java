@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -26,10 +27,9 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Game extends Main{
 
@@ -388,23 +388,52 @@ public class Game extends Main{
             public void handle(MouseEvent mouseEvent) {
 
                 String nick = User.getText();
-                HighScoreWriter();
+               // try {
+                    //HighScoreWriter(nick);
+                //} catch (FileNotFoundException e) {
+                   // e.printStackTrace();
+                //}
                 TextGrid.getChildren().remove(User);
                 TextGrid.getChildren().remove(Submit);
                 TextGrid.getChildren().remove(Nick);
             }
         });
     }
-    public void HighScoreWriter(){
-        try{
+    // do poprawienia
+    public void HighScoreWriter(String nick) throws FileNotFoundException {
+        int[] fiveBestScores= new int[6];
+        File file = new File("src/App/Resources/css/Highscores.txt");
+        Scanner overrite = new Scanner(file);
+        String space = "";
+        while (overrite.hasNextLine()){
+            Pattern pattern = Pattern.compile("\\d+");
+            Matcher matcher = pattern.matcher(space);
+            int i =0;
 
-            FileWriter scores = new FileWriter("Highscores.txt");
-            scores.write("kupa");
+            while (matcher.find()){
+                fiveBestScores[i] = Integer.parseInt(matcher.group());
+                i++;
+            }
+            FileWriter save = null;
 
-        } catch (IOException e) {
-            e.printStackTrace();
+            try {
+                save = new FileWriter(file);
+                if(foodN> fiveBestScores[0]){
+                    save. write(space.replaceAll("a\\)\\s\\d+\\s pkt", "a)"+ foodN + nick));
+                }
+
+            }catch (IOException e){
+                e.printStackTrace();
+            }
+            finally {
+                try{
+                    save.close();
+                }
+                catch (IOException e){
+                    e.printStackTrace();
+                }
+            }
         }
     }
-
 }
 
