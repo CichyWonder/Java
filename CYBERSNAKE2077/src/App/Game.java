@@ -141,7 +141,7 @@ public class Game extends Main{
         //Sprawdza jakie przyciski są wpisane
         Game.setOnKeyPressed(this::KeyPressedProcess);
 
-        //Generates Window
+     
         PrimaryStage.setTitle("CYBERSNAKE2077");
         PrimaryStage.setScene(Game);
         Game.getStylesheets().add(getClass().getResource("Resources/css/Game.css").toExternalForm());
