@@ -33,7 +33,24 @@
     -fx-background-image: url(city.gif);
     -fx-background-size: 800px 600px;
 }
-#labelup{
-    fx-font-size: 20px;
+ #controlmenu.label{
+    fx-font-size: 10px;
 }
-
+#textarea{
+    -fx-text-alignment: center;
+    -fx-background-color: trasnparent;
+    -fx-font-size: 40px;
+    -fx-text-fill: #fff300;
+}
+#labelleft{
+    -fx-font-size: 40px;
+}
+#labelup{
+    -fx-font-size: 40px;
+}
+#labeldown{
+    -fx-font-size: 40px;
+}
+#labelright{
+    -fx-font-size: 40px;
+}
