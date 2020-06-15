@@ -26,7 +26,7 @@ public class SterowanieController implements Initializable {
     private String rightcontrol;
 
     @FXML
-    private AnchorPane sterowanie;
+    private AnchorPane controlmenu;
 
     @FXML
     private TextField keyup;
@@ -43,7 +43,10 @@ public class SterowanieController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
+        keyup.setText(control.getUp());
+        keydown.setText(control.getDown());
+        keyright.setText(control.getRight());
+        keyleft.setText(control.getLeft());
     }
 
 
@@ -51,7 +54,7 @@ public class SterowanieController implements Initializable {
     public void back(javafx.event.ActionEvent actionEvent) throws IOException {
 
         AnchorPane Sterownie = FXMLLoader.load(getClass().getResource("fxml/Menu.fxml"));
-        sterowanie.getChildren().setAll(Sterownie);
+        controlmenu.getChildren().setAll(Sterownie);
     }
 
     public void save(ActionEvent actionEvent) {

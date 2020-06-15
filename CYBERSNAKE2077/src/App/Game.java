@@ -11,12 +11,14 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
+import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
@@ -75,7 +77,7 @@ public class Game extends Main{
     private int posX = new Random().nextInt(GridSizeSquared), posY =new Random().nextInt(GridSizeSquared);
 
 
-    private Rectangle Food = new Rectangle(12,12, Color.RED);
+    private Rectangle Food = fillFoodwithimage();
 
     //Trzyma Wynik
     private int foodN = 0;
@@ -125,7 +127,7 @@ public class Game extends Main{
 
 
         FlowPane Screen = new FlowPane(Orientation.VERTICAL,GameGrid, TextGrid);
-        TextGrid.setPrefHeight(600);
+        TextGrid.setPrefHeight(200);
         Screen.setId("Scene");
 
         GameGrid.setId("GameGrid");
@@ -134,14 +136,14 @@ public class Game extends Main{
 
 
 
-        Scene Game = new Scene(Screen, 970 ,608);
+        Scene Game = new Scene(Screen, 1167 ,800);
 
 
 
         //Sprawdza jakie przyciski są wpisane
         Game.setOnKeyPressed(this::KeyPressedProcess);
 
-     
+
         PrimaryStage.setTitle("CYBERSNAKE2077");
         PrimaryStage.setScene(Game);
         Game.getStylesheets().add(getClass().getResource("Resources/css/Game.css").toExternalForm());
@@ -296,10 +298,10 @@ public class Game extends Main{
     {
         for(int x =0;x<GridSizeSquared;x++)
         {
-            GameGrid.addColumn(x,new Rectangle(12,12, Color.TRANSPARENT));
+            GameGrid.addColumn(x,new Rectangle(16,16, Color.TRANSPARENT));
 
             for(int y = 1; y < GridSizeSquared;y++)
-                GameGrid.addRow(y,new Rectangle(12,12, Color.TRANSPARENT));
+                GameGrid.addRow(y,new Rectangle(16,16, Color.TRANSPARENT));
 
         }
 
@@ -388,11 +390,11 @@ public class Game extends Main{
             public void handle(MouseEvent mouseEvent) {
 
                 String nick = User.getText();
-               // try {
-                    //HighScoreWriter(nick);
-                //} catch (FileNotFoundException e) {
-                   // e.printStackTrace();
-                //}
+                try {
+                    HighScoreWriter(nick);
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                }
                 TextGrid.getChildren().remove(User);
                 TextGrid.getChildren().remove(Submit);
                 TextGrid.getChildren().remove(Nick);
@@ -401,39 +403,36 @@ public class Game extends Main{
     }
     // do poprawienia
     public void HighScoreWriter(String nick) throws FileNotFoundException {
-        int[] fiveBestScores= new int[6];
+        int[] fiveBestScores = new int[6];
         File file = new File("src/App/Resources/css/Highscores.txt");
-        Scanner overrite = new Scanner(file);
-        String space = "";
-        while (overrite.hasNextLine()){
-            Pattern pattern = Pattern.compile("\\d+");
-            Matcher matcher = pattern.matcher(space);
-            int i =0;
-
-            while (matcher.find()){
-                fiveBestScores[i] = Integer.parseInt(matcher.group());
-                i++;
-            }
-            FileWriter save = null;
-
-            try {
-                save = new FileWriter(file);
-                if(foodN> fiveBestScores[0]){
-                    save. write(space.replaceAll("a\\)\\s\\d+\\s pkt", "a)"+ foodN + nick));
-                }
-
-            }catch (IOException e){
-                e.printStackTrace();
-            }
-            finally {
-                try{
-                    save.close();
-                }
-                catch (IOException e){
-                    e.printStackTrace();
-                }
-            }
+        Scanner scanner = new Scanner(file);
+        String str = "";
+        while (scanner.hasNextLine()){ str += scanner.nextLine() + "\n"; }
+        Pattern pattern = Pattern.compile("\\d+");
+        Matcher matcher = pattern.matcher(str);
+        int i=0;
+        while (matcher.find()){
+            fiveBestScores[i] = Integer.parseInt(matcher.group());
+            i++;
         }
+        FileWriter fr = null;
+        try{
+            fr = new FileWriter(file);
+            if (foodN > fiveBestScores[0]){ fr.write(str.replaceAll("a\\)\\s\\d+\\spkt","a) " + foodN + " pkt"+ " "+ nick)); }
+            else if (foodN > fiveBestScores[1]){ fr.write(str.replaceAll("b\\)\\s\\d+\\spkt","b) " + foodN +" pkt" + " "+ nick)); }
+            else if (foodN > fiveBestScores[2]){ fr.write(str.replaceAll("c\\)\\s\\d+\\spkt","c) " + foodN +" pkt"+ " "+ nick)); }
+            else if (foodN > fiveBestScores[3]){ fr.write(str.replaceAll("d\\)\\s\\d+\\spkt","d) " + foodN + "pkt"+ " "+ nick)); }
+            else if (foodN > fiveBestScores[4]){ fr.write(str.replaceAll("e\\)\\s\\d+\\spkt","e) " + foodN +" pkt" +" "+ nick)); }
+            else { fr.write(str); }
+        } catch (IOException e) { e.printStackTrace(); }
+        finally { try { fr.close(); } catch (IOException e) { e.printStackTrace(); } }
+    }
+    public Rectangle fillFoodwithimage(){
+        File path = new File("src/App/Resources/css/bolt.png");
+        Image image = new Image(path.toURI().toString());
+        Rectangle body = new Rectangle(16,16);
+        body.setFill(new ImagePattern(image));
+        return body;
     }
 }
 

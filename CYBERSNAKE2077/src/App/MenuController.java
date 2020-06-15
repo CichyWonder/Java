@@ -44,12 +44,14 @@ public class MenuController implements Initializable {
 
     }
 
-    public void highscores(ActionEvent actionEvent) {
+    public void highscores(ActionEvent actionEvent) throws IOException{
+        AnchorPane highscores = FXMLLoader.load(getClass().getResource("fxml/Highscores.fxml"));
+        menu.getChildren().setAll(highscores);
     }
 
     public void sterowanie(ActionEvent actionEvent) throws IOException {
 
-        AnchorPane Readme = FXMLLoader.load(getClass().getResource("fxml/Sterowanie.fxml"));
-        menu.getChildren().setAll(Readme);
+        AnchorPane sterowanie = FXMLLoader.load(getClass().getResource("fxml/Sterowanie.fxml"));
+        menu.getChildren().setAll(sterowanie);
     }
 }
