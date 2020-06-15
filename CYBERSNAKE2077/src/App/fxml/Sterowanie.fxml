@@ -3,18 +3,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="sterowanie" prefHeight="600.0" prefWidth="800.0" stylesheets="@../Resources/css/Menu.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.SterowanieController">
+<AnchorPane fx:id="controlmenu" prefHeight="600.0" prefWidth="800.0" stylesheets="@../Resources/css/Menu.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.SterowanieController">
    <children>
       
       <Button layoutX="580.0" layoutY="475.0" mnemonicParsing="false" onAction="#back" prefHeight="48.0" prefWidth="143.0" text="Wróć" />
-      <Button layoutX="78.0" layoutY="475.0" mnemonicParsing="false" onAction="#save" prefHeight="86.0" prefWidth="202.0" text="Zapisz" />
-      <TextField fx:id="keyup" alignment="CENTER" editable="false" layoutX="431.0" layoutY="144.0" onKeyPressed="#up" prefHeight="35.0" prefWidth="149.0" text="W" />
-      <TextField fx:id="keydown" alignment="CENTER" editable="false" layoutX="431.0" layoutY="206.0" onKeyPressed="#down" prefHeight="35.0" prefWidth="149.0" text="S" />
-      <TextField fx:id="keyright" alignment="CENTER" editable="false" layoutX="431.0" layoutY="265.0" onKeyPressed="#right" prefHeight="35.0" prefWidth="149.0" text="D" />
-      <TextField fx:id="keyleft" alignment="CENTER" editable="false" layoutX="431.0" layoutY="336.0" onKeyPressed="#left" prefHeight="35.0" prefWidth="149.0" text="A" />
-      <Label fx:id="labelup" layoutX="104.0" layoutY="130.0" prefHeight="64.0" prefWidth="285.0" text="Ruch w górę" />
-      <Label layoutX="108.0" layoutY="192.0" text="Ruch w dół" />
-      <Label layoutX="78.0" layoutY="251.0" text="Ruch w prawo" />
-      <Label layoutX="93.0" layoutY="322.0" text="Ruch w lewo" />
+      <Button layoutX="78.0" layoutY="475.0" mnemonicParsing="false" onAction="#save" prefHeight="48.0" prefWidth="202.0" text="Zapisz" />
+      <TextField fx:id="keyup" alignment="CENTER" editable="false" layoutX="431.0" layoutY="144.0" onKeyPressed="#up" prefHeight="35.0" prefWidth="149.0" />
+      <TextField fx:id="keydown" alignment="CENTER" editable="false" layoutX="431.0" layoutY="206.0" onKeyPressed="#down" prefHeight="35.0" prefWidth="149.0" />
+      <TextField fx:id="keyright" alignment="CENTER" editable="false" layoutX="431.0" layoutY="265.0" onKeyPressed="#right" prefHeight="35.0" prefWidth="149.0" />
+      <TextField fx:id="keyleft" alignment="CENTER" editable="false" layoutX="431.0" layoutY="336.0" onKeyPressed="#left" prefHeight="35.0" prefWidth="149.0" />
+      <Label fx:id="labelup" layoutX="167.0" layoutY="135.0" prefHeight="64.0" prefWidth="285.0" text="Ruch w górę" />
+      <Label fx:id="labeldown" layoutX="231.0" layoutY="208.0" text="Ruch w dół" />
+      <Label fx:id="labelright" layoutX="191.0" layoutY="267.0" text="Ruch w prawo" />
+      <Label fx:id="labelleft" layoutX="207.0" layoutY="338.0" text="Ruch w lewo" />
    </children>
 </AnchorPane>
