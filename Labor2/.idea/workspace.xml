@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f71dab43-0e74-4c4c-9bce-f2b4185f5bb2" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YtNKeWgzQ3cikzmpoKGqVPdW8O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Application.zadanie4">
+    <configuration name="zadanie1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.pjatk.labor2.zadanie1" />
+      <module name="Labor2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pjatk.labor2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="zadanie2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.pjatk.labor2.zadanie2" />
+      <module name="Labor2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pjatk.labor2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="zadanie3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.pjatk.labor2.zadanie3" />
+      <module name="Labor2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pjatk.labor2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="zadanie4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.pjatk.labor2.zadanie4" />
+      <module name="Labor2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pjatk.labor2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="zadanie6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.pjatk.labor2.zadanie6" />
+      <module name="Labor2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.pjatk.labor2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.zadanie4" />
+        <item itemvalue="Application.zadanie6" />
+        <item itemvalue="Application.zadanie3" />
+        <item itemvalue="Application.zadanie2" />
+        <item itemvalue="Application.zadanie1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f71dab43-0e74-4c4c-9bce-f2b4185f5bb2" name="Default Changelist" comment="" />
+      <created>1583757867955</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583757867955</updated>
+      <workItem from="1583757877950" duration="1905000" />
+      <workItem from="1583762762476" duration="4818000" />
+      <workItem from="1584271729271" duration="1408000" />
+      <workItem from="1584286225698" duration="14845000" />
+      <workItem from="1584367412307" duration="122000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="88" key="#Project_Structure" timestamp="1583757893195">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="88" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1583757893195" />
+    <state width="1557" height="52" key="GridCell.Tab.0.bottom" timestamp="1584311567839">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="52" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1584311567839" />
+    <state width="1557" height="52" key="GridCell.Tab.0.center" timestamp="1584311567839">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="52" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1584311567839" />
+    <state width="1557" height="52" key="GridCell.Tab.0.left" timestamp="1584311567839">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="52" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1584311567839" />
+    <state width="1557" height="52" key="GridCell.Tab.0.right" timestamp="1584311567839">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="52" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1584311567839" />
+    <state x="496" y="253" key="com.intellij.ide.util.TipDialog" timestamp="1584367414860">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="496" y="253" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1584367414860" />
+    <state x="444" y="44" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584297411698">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="444" y="44" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1600.860@0.0.1600.860" timestamp="1584297411698" />
+    <state x="182" y="50" key="new project wizard" timestamp="1584367529969">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="182" y="50" key="new project wizard/0.0.1600.860@0.0.1600.860" timestamp="1584367529969" />
+    <state x="456" y="197" key="run.anything.popup" timestamp="1584296270267">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="456" y="197" key="run.anything.popup/0.0.1600.860@0.0.1600.860" timestamp="1584296270267" />
+  </component>
+</project>
